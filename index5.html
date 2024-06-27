@@ -1,0 +1,28 @@
+<!--to hide and unhide the text-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "roll">Hello Subham </p>
+    <button type ='btn' id = "togglebutton" onclick
+    ="togglevisibility()">Hide Text </button>
+    <script>
+        function togglevisibility() {
+            var element = document.getElementById('roll');
+            var button = document.getElementById('togglebutton');
+            if(element.style.display ==='none'){
+                element.style.display = 'block';
+                button.textContent ='Hide Text';
+            }
+            else{
+                element.style.display = 'none';
+                button.textContent = 'show Text';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!--to reset the size of the text vicevers--> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #roll{
+            font-size:16px;
+        }
+    </style>
+</head>
+<body>
+    <h2> javascript can change the css style</h2>
+    <p id ="roll">JS is Amazing</p>
+    <button type ="btn" onclick ="toggleFontSize()">Toggle font size</button>
+
+    
+    <script>
+        function toggleFontSize() {
+            var element = document.getElementById('roll');
+            if(element.style.fontSize =='35px'){
+                element.style.fontSize = '16px';
+            }else{
+                element.style.fontSize ='35px';
+            }
+        }
+    </script>
+</body>
+</html>
