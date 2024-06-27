@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h2> Hello World!</h2>
+    <p id="res"> </p>
+    <script>
+        function myDisplay(some){
+            document.getElementById("res").innerHTML=some;
+        }
+        function First(a, b) {
+            let sum = a + b;
+            return sum;
+        }
+
+        // Log the result of First(10, 20) to the console
+       let result = First(10,15);
+       myDisplay(result);
+    </script>
+
+</body>
+</html>
